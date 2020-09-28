@@ -1,0 +1,118 @@
+
+*{
+	padding: 0;
+	margin:0;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap; ME RESPETA LOS DIMENSIONES 
+	flex-direction: column or row; Controla flujo de cross axis
+	flex-flow: flex-direction - flex-wrap; 
+
+	/*JUSTIFY CONTENT  -----  Esto para posicionar el main axis, main axis es la X*/
+
+	justify-content: space-between;  Todas las cajas a la misma distancia*/
+	justify-content: space-around;  Dar mayor espacio de distancia a todas las cajas, lo más que se pueda. Aquí las start y end, tendrán diferente a las del medio*/
+	justify-content: space-evenly;  Dar margen a todas por igual, si una tiene 15 margin, todas tendrán 15*/ 
+	height: 100vh;
+	justify-content: center;
+	align-content: center;
+
+	/*ALING ITEMS -- Esto para posicionar el cross axis, cross axis es la Y* SOLO PARA 1 LINEA OSEA PARCE, USTED ME ENTENDERÁ. solo pa un botón ps, no más botones pq sino se daña gonorrea/
+	*/
+
+	align-items: center; Me pone el objeto en la mitad*/
+	aling-items: flex-start Me pone el objeto arriba del todo */
+	aling-items: flex-end Me pone el objeto abajo del todo*/
+	aling-items: baseline Hombre, si vos le pones flex-end se te queda ahí. Si usaras esa catre hijueputa de flex-end y tenes un wrap-reverse, esa chimbada se sube. Con el baseline, no, el contenedor se queda ahí así alla un wrap-reverse*/
+
+	 ALING CONTENT -- Es para posicionar el cross axis, cross axis es la Y. Esta sirve pa los botones que se me de la gana Maxi*/
+
+	align-content: flex-start*/
+
+}
+
+.a{
+	padding: 15px;
+	background-color: #28f;
+	height: 120px;
+	color:#fff;
+	min-width: 120px;
+
+
+
+
+	/*AHORA VAMOS CON LAS PROPIEDADES DE LOS ITEMS */
+
+	aling-self: center;  Me pone el objeto en la mitad*/
+	aling-self: flex-start Me pone objeto arriba del todo*/
+	aling-self: flex-end Me pone objeto abajo del todo*/
+	aling-self: baseline;  Lo mismo de arriba bro */
+
+
+	/*AHORA VAMOS CON FLEX GROW */
+
+	 FLEX GROW LO QUE HACE ES QUE LO QUE SOBRA ME LO REPARTE ENTRE LAS CAJAS
+	POR EJEMPLO TENEMOS 3 CAJAS Y SOBRA UN ESPACIO DE 300PX, PUES ENTONCES CON
+	FLEX-GROW: 1, LE DECIMOS QUE LE DE 1 PEDAZITO DE ESE ESPACIO A CADA CAJA
+
+
+	PODEMOS HACER ALGO COMO UNA CAJA CON MIN-WIDTH Y QUE SE PUEDA EXPANDIR PERO
+	SI LLEGA A MENOS DE 120 QUE LO MANDE PARA ABAJO CON FLEX-WRAP:WRAP*/
+
+	flex-grow:1; Ya sabes funcionamiento*/
+
+
+
+
+
+	/*AHORA VAMOS CON FLEX-BASIS*/
+
+	FLEX-BASIS ES COMO EL WIDTH, SOLO QUE MÁS IMPORTANTE
+
+
+	WIDTH:200PX;
+	FLEX-BASIS:300PX;
+
+	LA CAJA TENDRÁ 300PX
+	*/
+
+
+
+
+
+	/*AHORA VAMOS CON FLEX-SHRINK*/
+
+	FLEX-SHRINK LO QUE HACE ES QUE CEDE ESPACIO, POR EJEMPLO
+	SI ESTAMOS EN UN CELULAR, Y QUEREMOS QUE LAS CAJAS DEL MEDIO NO CAMBIEN
+	SU ESPACIO PERO LA DE LA IZQUIERDA SI, PUES USAMOS QUE LA CAJA IZQ TENGA UN 
+	FLEX-SHRINK DE 2, Y ASÍ CEDERÁ 2 DE LO QUE TIENE*/
+
+
+	/*AHORA CON FLEX*/
+	flex: adjunta todos; 
+	flex: flex-grow - flex-shrink - flex-basis - ;
+
+
+
+
+	/* INICIAMOS CON DISPLAY GRID*/
+
+	display:grid; Lo que hace es crear una tabla
+	grid-template-rows: ; crea una fila 
+	grid-template-columns: ; crea una columna
+
+
+}
+
+.orange{
+	background:#0e0;
+	color:#000;
+
+	flex-shrink: 5;
+}
+
+.a{
+	display: block;
+}*/

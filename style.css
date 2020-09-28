@@ -1,0 +1,337 @@
+:root{
+	--colorPrimario: rgb(11, 216, 162);
+	--colorSecundario: rgb(11, 206, 120);
+	--fondoLetras: #1F1E1E;
+}
+
+
+body{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+/* HEADER */
+
+
+header nav ul li{
+	display: inline-block;
+	margin-right: 15px;
+}
+header nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color:#000;
+}
+
+header nav h2{
+	margin-left: 20px;
+}
+
+.services{
+	border:2px solid var(--colorPrimario);
+	color: var(--colorPrimario);
+	padding: 10px;
+	margin: 0 0 0 25px;
+	transition: color 1s, background 1s
+}
+
+.services:hover{
+	color:#fff;
+	background:var(--colorPrimario);
+}
+
+.home{
+	border:none;
+}
+
+.home:hover{
+	color:var(--colorPrimario);
+}
+
+/* MAIN - ABOUT US ME */
+
+.iam__max{
+	font-weight: bold;
+	color:var(--colorPrimario);
+	font-style: normal;
+}
+
+.title__about--me{
+	text-align: center;
+	font-weight: 300;
+}
+
+.container__images{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+/*====================================== 
+============ Services ==================
+=====================================*/
+
+.skills{
+	background: #fbfbfe;
+	display: flex;
+	justify-content: space-around;
+	padding: 15px;
+}
+
+.skills .frontend .frontend__img img{
+	width: 400px;
+}
+
+.frontend{
+	background: #fff;
+	box-shadow: 3px 3px 55px -8px rgba(0,0,0,0.75);
+	border-radius:15px;
+}
+
+.frontend__img img{
+	border-radius: 15px 15px 0 0;
+}
+
+.frontend__text{
+	text-align: center;
+}
+
+
+
+.frontend__text article h1{
+	color: var(--colorPrimario);
+}
+
+.frontend__text span{
+	margin-top: 5px;
+	background: var(--colorPrimario);
+	padding: 15px;
+	color:#fff;
+	border-radius: 5px
+}
+
+.img--backend{
+	width: 400px;
+}
+
+
+/*BACKEND*/
+
+.backend{
+	background: #fff;
+	box-shadow: 3px 3px 55px -8px rgba(0,0,0,0.75);
+	border-radius:15px;
+}
+
+.backend__img img{
+	border-radius: 15px 15px 0 0;
+}
+
+.backend__text{
+	text-align: center;
+}
+
+
+
+.backend__text article h1{
+	color: var(--colorPrimario);
+}
+
+.backend__text span{
+	margin-top: 5px;
+	background: var(--colorPrimario);
+	padding: 15px;
+	color:#fff;
+	border-radius: 5px
+}
+
+@media only screen and (max-width: 500px){
+	.skills{
+		flex-wrap: wrap;
+	}
+
+	.backend{
+		margin-top: 25px;
+	}
+}
+
+
+/* ================================
+============= ABOUT ME ============
+=================================== */
+
+
+.meet_me{
+	text-align: center;
+	background: var(--colorPrimario);
+	height: 150px;
+	margin-top: 80px;
+	color:#fff;
+	padding: 12px;
+}
+
+
+
+
+/* ================================
+============= GET MY SERVICES =====
+=================================== */
+
+
+
+.modal-container{
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	top:0;
+	left:0;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal{
+	width: 40%;
+	height: 50%;
+	background: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: relative;
+	transition: transform 0.8s;
+	transform: translateY(0%);
+	border-radius: 10px;
+
+}
+
+.modal-close{
+	transform: translateY(-200%);
+}
+
+.close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: #c44a4a;
+	color:#fff;
+	line-height: 25px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.modal > img{
+	height: 50%;
+}
+
+.modal-textos > h2{
+	color: var(--colorPrimario);
+}
+
+.modal-textos > a{
+	text-decoration: none;
+	color:var(--colorPrimario);
+	transition: border 1s;
+}
+
+.modal-textos > a:hover{
+	border:1px solid var(--colorPrimario);
+	padding: 5px;
+	background: var(--colorPrimario);
+	color:#fff;
+}
+
+
+
+
+/*=============================
+============FOOTER=============
+===============================*/
+
+footer{
+	background: var(--colorPrimario);
+	text-align: center;
+	padding: 15px;
+	margin-top: 15px
+}
+
+.fa-rocket{
+	font-size: 28px;
+	animation: rocket 1s alternate infinite ease-in;
+	color:#fff;
+
+}
+
+.max--decode{
+	color:#fff;
+	letter-spacing: 2px;
+}
+
+.max--decode span{
+	color:rgb(11, 116, 102);
+}
+
+
+.col1{
+	display: flex;
+	justify-content: center;
+}
+@keyframes rocket{
+	0%{
+		transform:scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+
+footer .col1 > p{
+	color:#fff;
+	letter-spacing: 5px;
+}
+
+.social-network .github a{
+	font-size: 43px;
+	color:  rgb(11, 116, 102);
+
+}
+
+
+@media only screen and (max-width: 390px){
+	
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.meet_me{
+		height: 400px;
+	}
+}
+
+@media only screen and (max-width: 250px){
+	.home{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 600px){
+	.meet_me{
+		height: 200px;
+	}
+}
