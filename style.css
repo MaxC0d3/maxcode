@@ -152,6 +152,30 @@ header nav h2{
 	border-radius: 5px
 }
 
+
+.backend__text span a{
+	color:#fff;
+	text-decoration: none;
+}
+
+
+.backend__text span a:hover{
+	cursor: pointer;
+	border-bottom: 2px solid #fff;
+}
+
+.frontend__text span a{
+	color:#fff;
+	text-decoration: none;
+}
+
+
+.frontend__text span a:hover{
+	cursor: pointer;
+	border-bottom: 2px solid #fff;
+}
+
+
 @media only screen and (max-width: 500px){
 	.skills{
 		flex-wrap: wrap;
@@ -160,7 +184,15 @@ header nav h2{
 	.backend{
 		margin-top: 25px;
 	}
+
+	.skills{
+		width:
+	}
+	body{
+		overflow-x: hidden;
+	}
 }
+
 
 
 /* ================================
