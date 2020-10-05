@@ -207,6 +207,7 @@ header nav h2{
 	margin-top: 80px;
 	color:#fff;
 	padding: 12px;
+	width: 100%;
 }
 
 
@@ -298,7 +299,8 @@ footer{
 	background: var(--colorPrimario);
 	text-align: center;
 	padding: 15px;
-	margin-top: 15px
+	margin-top: 15px;
+	width: 100%;
 }
 
 .fa-rocket{
