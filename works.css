@@ -76,7 +76,9 @@ header nav h2{
 */
 
 .col-1{
-	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
 	padding:5px;
 	border-radius: 0 0 15px 15px;
 	box-shadow: 3px 3px 20px -8px rgba(0,0,0,0.75);
@@ -84,7 +86,7 @@ header nav h2{
 }
 
 .col-1__img img{
-	width: 400px;
+	width: 300px;
 }
 
 .col-1__txt h2{
